@@ -146,11 +146,11 @@ module.exports = function (grunt) {
             expand: true
           },
           {
-            dest: 'public/build/assets/img/',
+            dest: 'public/build/assets/images/',
             src: [
               '**/*.{jpg,png,gif}'
             ],
-            cwd: 'src/img',
+            cwd: 'src/images',
             expand: true
           }, {
             dest: 'public/',
