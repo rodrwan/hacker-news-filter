@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="HackerNews">
+<head>
+  <meta charset="utf-8" />
+  <title>Hacker News Searcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="build/assets/css/style.min.css" />
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="bower_components/angular-social/angular-social.css" />
+  <!-- endbower -->
+
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="bower_components/restangular/dist/restangular.js"></script>
+  <script src="bower_components/angular-social/angular-social.js"></script>
+  <!-- endbower -->
+  <script src="build/app/hackerjs.js"></script>
+</head>
+
+<body autoscroll="true" >
+  <div id="wrapper" layout="column">
+    <md-content>
+      <searcher></searcher>
+      <br/>
+      <topic-results></topic-results>
+    </md-content>
+
+    <md-content id="footer">
+      <a href="http://github.com/rodrwan" title="Rodrwan" target="_blank">Rodrwan</a>
+    </md-content>
+  </div>
+  <script src="//localhost:8001/livereload.js"></script>
+</body>
+</html>

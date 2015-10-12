@@ -1,0 +1,17 @@
+<md-list class="topicList">
+  <md-list-item ng-repeat="topic in topics" class="topic">
+    <div class="link">
+      <a href="{{ topic.href }}" title="{{ topic.text }}" target="_blank">{{ topic.text }}</a>
+      <ul
+        ng-social-buttons
+        data-url="topic.href"
+        data-title="topic.text"
+        data-description="topic.text"
+        style="margin-right: 0">
+        <li class="ng-social-facebook">Facebook</li>
+        <li class="ng-social-twitter">Twitter</li>
+      </ul>
+    </div>
+    <md-divider ng-if="!$last"></md-divider>
+  </md-list-item>
+</md-list>

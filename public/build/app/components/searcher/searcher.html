@@ -1,0 +1,15 @@
+<md-input-container class="flex md-default-theme">
+  <label for="input-query">Enter your query here...</label>
+  <input
+    class="ng-pristine ng-valid md-input ng-touched"
+    name="query"
+    ng-model="query"
+    minlength="2"
+    id="input-query" />
+</md-input-container>
+<div style="margin: 0 auto; text-align: center;">
+  <button
+    class="md-primary md-raised md-button md-default-theme"
+    ng-click="search()">Search</button>
+</div>
+

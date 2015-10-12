@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="HackerNews">
+<head>
+  <meta charset="utf-8" />
+  <title>Hacker News Searcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="build/assets/css/style.min.css" />
+
+  <!-- bower:css -->
+  <!-- endbower -->
+
+  <!-- bower:js -->
+  <!-- endbower -->
+  <script src="build/app/hackerjs.js"></script>
+</head>
+
+<body autoscroll="true" >
+  <div id="wrapper" layout="column">
+    <md-content>
+      <searcher></searcher>
+      <br/>
+      <topic-results></topic-results>
+    </md-content>
+
+    <md-content id="footer">
+      <a href="http://github.com/rodrwan" title="Rodrwan" target="_blank">Rodrwan</a>
+    </md-content>
+  </div>
+  <script src="//localhost:8001/livereload.js"></script>
+</body>
+</html>
