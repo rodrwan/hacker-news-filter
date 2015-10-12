@@ -4,5 +4,6 @@ node_js:
 languege: ruby
 rvm:
   - 2.2.0
+before_install: rvm install 2.2.0
 before_install: npm install -g grunt-cli
 install: npm install
